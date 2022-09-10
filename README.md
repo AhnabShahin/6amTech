@@ -1,5 +1,5 @@
 #  Perform all crud operations with ajax.
-####  [Data Set](https://github.com/AhnabShahin/6amTech#readme)
+####  [Data Set](https://github.com/AhnabShahin/6amTech/blob/main/tast_6amtech.sql)
 ## Category
 ### Index
 ```javascript

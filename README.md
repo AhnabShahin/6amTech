@@ -1,3 +1,195 @@
+## Category
+### Index
+```javascript
+var form = new FormData();
+var settings = {
+  "url": "http://127.0.0.1:8000/api/category",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+  "processData": false,
+  "mimeType": "multipart/form-data",
+  "contentType": false,
+  "data": form
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Store
+```javascript
+var form = new FormData();
+form.append("name", "Shirt");
+
+var settings = {
+  "url": "http://127.0.0.1:8000/api/category",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+  "processData": false,
+  "mimeType": "multipart/form-data",
+  "contentType": false,
+  "data": form
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Show
+```javascript
+var settings = {
+  "url": "http://127.0.0.1:8000/api/category/1",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Update
+```javascript
+var settings = {
+  "url": "http://127.0.0.1:8000/api/category/1",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+  "data": {
+    "name": "Pant"
+  }
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Destroy
+```javascript
+var settings = {
+  "url": "http://127.0.0.1:8000/api/category/1",
+  "method": "DELETE",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+## Product
+### Index
+```javascript
+var form = new FormData();
+var settings = {
+  "url": "http://127.0.0.1:8000/api/products",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+  "processData": false,
+  "mimeType": "multipart/form-data",
+  "contentType": false,
+  "data": form
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Store
+```javascript
+var form = new FormData();
+form.append("name", "Full Shirt");
+
+var settings = {
+  "url": "http://127.0.0.1:8000/api/products",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+  "processData": false,
+  "mimeType": "multipart/form-data",
+  "contentType": false,
+  "data": form
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Show
+```javascript
+var settings = {
+  "url": "http://127.0.0.1:8000/api/products/1",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Update
+```javascript
+var settings = {
+  "url": "http://127.0.0.1:8000/api/products/1",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+  "data": {
+    "name": "Half Shirt"
+  }
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+### Destroy
+```javascript
+var settings = {
+  "url": "http://127.0.0.1:8000/api/products/1",
+  "method": "DELETE",
+  "timeout": 0,
+  "headers": {
+     "Authorization": `Bearer ${token}`,
+     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
 ## User
 ### Register
 ```javascript
@@ -83,7 +275,7 @@ $.ajax(settings).done(function (response) {
 ### Store
 ```javascript
 var form = new FormData();
-form.append("name", "Shirt");
+form.append("name", "Seller");
 
 var settings = {
   "url": "http://127.0.0.1:8000/api/user-type",
@@ -130,7 +322,7 @@ var settings = {
      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
   },
   "data": {
-    "name": "shirt"
+    "name": "Buyer"
   }
 };
 
